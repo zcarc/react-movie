@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types'
 
 class App extends React.Component{
 
@@ -8,10 +7,10 @@ class App extends React.Component{
   };
 
   add = () => {
-    console.log('add');
+    this.setState(current => ({count: current + 1}))
   }
   minus = () => {
-    console.log('minus');
+    this.setState({count: this.state.count - 1})
   }
 
   // this.add() 중괄호의 의미는 즉시실행한다는 의미이다.
