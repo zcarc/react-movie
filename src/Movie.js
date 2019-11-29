@@ -8,7 +8,7 @@ return (
         <img src={poster} alt={title} title={title}></img>
         <div className="movie__data">
             <h3 className="movie__title">{title}</h3>
-            <ul className="generes">
+            <ul className="movie__genres">
                 {genres.map( (genre, index) => 
                     <li key={index} className="genres__genre">
                         {genre}
